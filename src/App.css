@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family:"masque" ;
+  src: url(../public/MASQUE__.ttf);
+
+}
+@font-face {
+  font-family:"sans" ;
+  src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: url(../public/flat-mountains.svg);
+  background-size:cover;
+  background-attachment: fixed; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation-name:appear;
+  animation-duration: 4s;
 }
 
-@keyframes App-logo-spin {
+.App-iconbar-icons {
+  transition: 1s;
+}
+.App-iconbar-icons:hover {
+  background-color: #00ffff;
+  scale: 110%;
+  transition: 1s;
+}
+
+.App-name {
+  font-family: "masque";
+  font-size: 50px;
+  
+  
+}
+@keyframes appear {
   from {
-    transform: rotate(0deg);
+    scale: 120%;
+    opacity: 0%;
+    filter: blur(10px);
   }
   to {
-    transform: rotate(360deg);
+    scale: 100%;
+    opacity: 100%;
+  }
+}
+
+.App-name span {
+  color: white;
+  transition: 1s;
+}
+
+.App-name span:hover {
+  color: aqua;
+  font-size: 70px;
+  transition: 1s;
+}
+
+.App-hash {
+  font-size: 20px;
+}
+
+.App-hash01 {
+  font-family: "sans";
+  opacity: 100%;
+  color: aqua;
+}
+
+.App-iconbar-icons {
+  background-color: white;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 100px;
+  color: black;
+}
+.App-scroll {
+  position: absolute;
+  z-index: 100;
+  scale: 10vw;
+  transform: translateY(30vh);
+}
+.App-scroll span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  opacity: 50%;
+  animation: scroll 2s infinite;
+}
+.App-scroll span:nth-child(2) {
+  animation-delay: -.2s;
+}
+.App-scroll span:nth-child(3) {
+  animation-delay: -.4s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+@media (max-width:1200px) {
+  .App-name {
+    font-size: 7vw;
+  }
+  .App-iconbar-icons {
+    padding: 10px;
+  }
+  .App-hash {
+    font-size: 20px;
   }
 }
