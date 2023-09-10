@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {useTypewriter, Cursor} from 'react-simple-typewriter';
+import { GitHub } from '@mui/icons-material';
 
 function App() {
   const [text] = useTypewriter({
@@ -43,6 +44,7 @@ function App() {
       </div>
       <div className="App-iconbar">
         <a href="https://www.linkedin.com/in/thanura-rukshan-8b610b169/?originalSubdomain=lk"><LinkedInIcon className='App-iconbar-icons' /></a>
+        <a href="https://github.com/thanurarukshan"><GitHub className='App-iconbar-icons' /></a>
         <a href="https://www.facebook.com/thanura.rukshan.5"><FacebookIcon className='App-iconbar-icons' /></a>
         <a href="mailto:thanurarukshan2000@gmail.com"><EmailIcon className='App-iconbar-icons' /></a>
         <a href="https://wa.me/+94779371866"><WhatsAppIcon className='App-iconbar-icons' /></a>

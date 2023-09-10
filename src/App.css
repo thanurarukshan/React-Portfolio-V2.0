@@ -78,6 +78,10 @@ body {
   color: aqua;
 }
 
+.App-iconbar {
+  margin-top: 7px;
+}
+
 .App-iconbar-icons {
   background-color: white;
   padding: 15px;
@@ -131,5 +135,9 @@ body {
   }
   .App-hash {
     font-size: 20px;
+  }
+  .App-iconbar {
+    margin-top: 6px;
+    max-width: 80%;
   }
 }
