@@ -54,7 +54,7 @@
 
 .Aboutme-cv:hover {
     background-color: aqua;
-    transition: 1s;
+    transition: 1s !important; 
 }
 
 @media (max-width: 1200px) {
