@@ -1,3 +1,14 @@
+@keyframes grow {
+    0% {
+        scale: 100%;
+    }
+    50% {
+        scale: 101%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
 .Aboutme {
     color: white;
     min-width: 100vw;
@@ -17,13 +28,13 @@
     font-size: 20px;
 }
 .Aboutme-me {
-    max-width: 250px;
-    transition: 1s;
+    width: 300px;
+    animation:grow 2s ease-in-out infinite;
 }
 .Aboutme-me:hover {
-    max-width: 300px;
-    transition: 1s;
+    animation-play-state: paused;
 }
+
 .Aboutme-edu-edu {
     font-size: 40px;
 }
