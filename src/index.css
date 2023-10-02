@@ -16,3 +16,11 @@ code {
     monospace;
 }
 
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,*:focus,*:hover{
+  outline:none;
+}
