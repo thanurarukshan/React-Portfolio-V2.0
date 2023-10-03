@@ -1,18 +1,16 @@
 @font-face {
-  font-family:"masque" ;
+  font-family: "masque";
   src: url(../public/MASQUE__.ttf);
-
 }
 @font-face {
-  font-family:"sans" ;
+  font-family: "sans";
   src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
 }
 
-
 body {
   background-image: url(../public/flat-mountains.svg);
-  background-size:cover;
-  background-attachment: fixed; 
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  animation-name:appear;
+  animation-name: appear;
   animation-duration: 4s;
 }
 
@@ -42,8 +40,6 @@ body {
 .App-name {
   font-family: "masque";
   font-size: 50px;
-  
-  
 }
 @keyframes appear {
   from {
@@ -107,26 +103,26 @@ body {
   animation: scroll 2s infinite;
 }
 .App-scroll span:nth-child(2) {
-  animation-delay: -.2s;
+  animation-delay: -0.2s;
 }
 .App-scroll span:nth-child(3) {
-  animation-delay: -.4s;
+  animation-delay: -0.4s;
 }
 @keyframes scroll {
   0% {
     opacity: 0;
-    transform: rotate(45deg) translate(-20px,-20px);
+    transform: rotate(45deg) translate(-20px, -20px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(20px,20px);
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .App-name {
     font-size: 7vw;
   }

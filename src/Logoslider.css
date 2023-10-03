@@ -1,35 +1,33 @@
 .logos {
-    width: 100vw;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-
-
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 .logo-slider img {
-    max-height: 100px;
-    padding: 10px 20px;
+  max-height: 100px;
+  padding: 10px 20px;
 }
 
 .logo-slider {
-    display: inline-block;
-    white-space: nowrap;
-    animation: 10s slide linear infinite;  
-    opacity: 50%;
+  display: inline-block;
+  white-space: nowrap;
+  animation: 10s slide linear infinite;
+  opacity: 50%;
 }
 
 @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 1200px) {
-    .logo-slider img {
-        max-height: 10vh;
-        padding: 10px 12px;
-    }
+  .logo-slider img {
+    max-height: 10vh;
+    padding: 10px 12px;
+  }
 }

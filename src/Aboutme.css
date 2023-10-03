@@ -1,73 +1,72 @@
 @keyframes grow {
-    0% {
-        scale: 100%;
-    }
-    50% {
-        scale: 101%;
-    }
-    100% {
-        scale: 100%;
-    }
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 101%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 .Aboutme {
-    color: white;
-    min-width: 100vw;
-    min-height: 100vh;
-    /*background-color: black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  /*background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.Aboutme-aboutme{
-    font-size: 80px;
+.Aboutme-aboutme {
+  font-size: 80px;
 }
 .Aboutme-dis {
-    max-width: 1000px;
-    text-align: justify;
-    font-size: 20px;
+  max-width: 1000px;
+  text-align: justify;
+  font-size: 20px;
 }
 .Aboutme-me {
-    width: 300px;
-    animation:grow 2s ease-in-out infinite;
+  width: 300px;
+  animation: grow 2s ease-in-out infinite;
 }
 .Aboutme-me:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .Aboutme-edu-edu {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .Aboutme-cv {
-    color: black;
-    text-decoration: none;
-    padding: 20px;
-    background-color: white;
-    margin-top: 50px;
-    border-radius: 200px;
-    transition: 1s;
-    font-weight: 600;
-    user-select: none;
-
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 200px;
+  transition: 1s;
+  font-weight: 600;
+  user-select: none;
 }
 
 .Aboutme-cv:hover {
-    background-color: aqua;
-    transition: 1s !important; 
+  background-color: aqua;
+  transition: 1s !important;
 }
 
 @media (max-width: 1200px) {
-    .Aboutme-dis {
-        max-width: 70%;
-    }
-    .Aboutme-aboutme {
-        font-size: 12vw;
-    }
-    .Aboutme-dis {
-        font-size: 16px;
-    }
-    .Aboutme-me {
-        width: 250px;
-    }
+  .Aboutme-dis {
+    max-width: 70%;
+  }
+  .Aboutme-aboutme {
+    font-size: 12vw;
+  }
+  .Aboutme-dis {
+    font-size: 16px;
+  }
+  .Aboutme-me {
+    width: 250px;
+  }
 }
