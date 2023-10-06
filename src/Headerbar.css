@@ -1,42 +1,40 @@
 @font-face {
-    font-family:"sans" ;
-    src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
-  }
+  font-family: "sans";
+  src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
+}
 
 body {
-    font-family: sans ;
-    scroll-behavior: smooth;
+  font-family: sans;
+  scroll-behavior: smooth;
 }
 
 .headerbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2% 2%;
-    background-color: white;
-    color: black;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2% 2%;
+  background-color: white;
+  color: black;
 }
 
 .headerbar a {
-    text-decoration: none;
-    color: inherit;
-    padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
 }
 
 .headerbar a:hover {
-    color: #BF40BF;
-    transition: 0.5s;
+  color: #bf40bf;
+  transition: 0.5s;
 }
 
 .headerbar-main {
-
-    position: sticky;
-    top: 0px;
-    z-index: 100;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
 @media (orientation: portrait) {
-    .headerbar {
-        padding: 6% 4%;
-    }
+  .headerbar {
+    padding: 6% 4%;
+  }
 }
