@@ -1,5 +1,5 @@
 import "./Logoslider.css";
-import React from 'react'
+import React from "react";
 
 function Logoslider() {
   return (
@@ -35,7 +35,7 @@ function Logoslider() {
         <img src="./logos/tailwind.png" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Logoslider
+export default Logoslider;
