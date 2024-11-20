@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { GitHub } from "@mui/icons-material";
 
@@ -11,9 +12,9 @@ function App() {
   const [text] = useTypewriter({
     words: [
       "Engineering Undergraduate",
+      "Cloud Enthusiast",
       "Web Developer",
-      "App Developer",
-      "Graphic Designer",
+      "Software Engineer",
     ],
     loop: {},
   });
@@ -53,6 +54,9 @@ function App() {
         </a>
         <a href="https://www.facebook.com/thanura.rukshan.5">
           <FacebookIcon className="App-iconbar-icons" />
+        </a>
+        <a href="https://www.instagram.com/thanura_rukshan/">
+          <InstagramIcon className="App-iconbar-icons" />
         </a>
         <a href="mailto:thanurarukshan2000@gmail.com">
           <EmailIcon className="App-iconbar-icons" />

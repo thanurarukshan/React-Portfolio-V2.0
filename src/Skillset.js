@@ -20,30 +20,42 @@ function Skillset() {
             <span id="title-content">Python, JavaScript, Java</span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Web Development</span>
+            <span id="title">UI / UX Design</span>
             <span id="title-content">
-              Html, CSS, JS, Reactjs, Nextjs, Nodejs, Expressjs, Figma
+              Figma
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Mobile App Development</span>
-            <span id="title-content">Flutter, Android Studio</span>
+            <span id="title">Web Development - Front End</span>
+            <span id="title-content">
+              Html, CSS, JS, Reactjs, Nextjs
+            </span>
+          </div>
+          <div data-aos="fade-up">
+            <span id="title">Web Development - Back End</span>
+            <span id="title-content">
+              Nodejs, Expressjs
+            </span>
+          </div>
+          <div data-aos="fade-up">
+            <span id="title">Cloud Computing</span>
+            <span id="title-content">
+              Containers & Kubernetes, Docker, OpenShift, AWS Services
+            </span>
           </div>
           <div data-aos="fade-up">
             <span id="title">DevOps</span>
             <span id="title-content">Git, Github</span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Cloud Computing</span>
-            <span id="title-content">AWS Services</span>
-          </div>
-          <div data-aos="fade-up">
             <span id="title">Database Management</span>
             <span id="title-content">MySQL, phpmyadmin</span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Cyber Security</span>
-            <span id="title-content">Bug-bounty, Pen-testing</span>
+            <span id="title">Software Engineering</span>
+            <span id="title-content">
+              Agile, Scrum, Linux, Data Structure and Algorithms
+            </span>
           </div>
           <div data-aos="fade-up">
             <span id="title">Graphic Design</span>

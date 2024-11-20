@@ -5,6 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { GitHub } from "@mui/icons-material";
 
 function Footer() {
@@ -21,6 +22,9 @@ function Footer() {
           <a href="https://www.facebook.com/thanura.rukshan.5">
             <FacebookIcon />
           </a>
+          <a href="https://www.instagram.com/thanura_rukshan/">
+            <InstagramIcon />
+          </a>
           <a href="mailto:thanurarukshan2000@gmail.com">
             <EmailIcon />
           </a>
@@ -29,7 +33,7 @@ function Footer() {
           </a>
         </div>
         <span id="footer-main-span">
-          Copyright © 2023 | All Rights Reserved
+          Copyright © 2024 | All Rights Reserved
         </span>
         <span>Thanks for Visit</span>
       </div>

@@ -2,8 +2,7 @@ import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import New from "./assets/New.pdf";
-
+import New from "./assets/May20.pdf"; // cv
 function Aboutme() {
   const handleDownloadCV = () => {
     window.open(New);
@@ -24,11 +23,9 @@ function Aboutme() {
         Aboutme
       </span>
       <span className="Aboutme-dis" data-aos="fade-up">
-        Hey there! I am an engineering undergraduate with an IT background. I am
-        self-motivated and a fun, friendly person who is always willing to try
-        new things. I work well in groups as well as on my own because I like to
-        set goals for myself that I can achieve, and I have good listening and
-        communication skills.
+      Hardworking Engineering undergraduate with a strong IT background. 
+      Self-motivated and a fast learner, eager to leverage my skills and gain 
+      practical knowledge through a challenging opportunity.
       </span>
       <a className="Aboutme-cv" data-aos="fade-up" onClick={handleDownloadCV}>
         Download CV

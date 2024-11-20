@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Aboutme from "./Aboutme";
 import Skillset from "./Skillset";
+import Projects from "./Projects";
 import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +14,7 @@ root.render(
     <App />
     <Aboutme />
     <Skillset />
+    <Projects />
     <Footer />
   </React.StrictMode>,
 );
