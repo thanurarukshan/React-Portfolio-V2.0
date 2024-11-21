@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 function Projects() {
   const handleDivClick1 = () => {
-    window.location.href = 'https://github.com/thanurarukshan/React-Portfolio-V2.0';
+    window.location.href = 'https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all';
   }
   const handleDivClick2 = () => {
     window.location.href = 'https://github.com/thanurarukshan/property-selling-web-app-static';
@@ -33,9 +33,9 @@ function Projects() {
           Experience
         </span>
         <div className="Skillset-skill-des">
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" onClick={handleDivClick1}>
             <span id="title">Trainee DevOps Engineer</span>
-            <span id="title-content">hSenid Mobile Solutions</span>
+            <span id="title-content" className="sub-title">hSenid Mobile Solutions</span>
             <span id="title-content">Created Ansible Scripts to automate tasks - (Disk Partitioning, Fresh OS Setup) helps to reduce the time it takes to do the same thing on multiple servers. Testing and debugging pre-written ansible scripts on MySQL, mongoDB binary.</span>
             <span id="title-content">Security Hardening on Apache server (CIS | Apache 2.4) - made changes on configuration files and change the user privileges and access permissions to achieve the preposed hardening level. </span>
             <span id="title-content">Experience with clustered systems (PCS Clusters) - Worked with a web server hosted on clustered system, where multiple systems work on same task to certify higher availability and load balancing. </span>
