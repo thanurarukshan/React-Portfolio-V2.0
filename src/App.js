@@ -11,10 +11,11 @@ import { GitHub } from "@mui/icons-material";
 function App() {
   const [text] = useTypewriter({
     words: [
+      "Trainee DevOps Engineer",
       "Engineering Undergraduate",
       "Cloud Enthusiast",
-      "Web Developer",
-      "Software Engineer",
+      "AWS Trained",
+      "Freelancer (Development)",
     ],
     loop: {},
   });

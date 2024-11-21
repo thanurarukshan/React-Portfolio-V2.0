@@ -23,9 +23,7 @@ function Aboutme() {
         Aboutme
       </span>
       <span className="Aboutme-dis" data-aos="fade-up">
-      Hardworking Engineering undergraduate with a strong IT background. 
-      Self-motivated and a fast learner, eager to leverage my skills and gain 
-      practical knowledge through a challenging opportunity.
+      Dedicated and hardworking engineering undergraduate with a strong foundation in IT and a passion for continuous growth. A self-motivated and fast learner with proven ability to adapt quickly and excel in new challenges. Actively seeking opportunities to apply my skills, expand my knowledge, and gain practical experience in a dynamic and challenging environment.
       </span>
       <a className="Aboutme-cv" data-aos="fade-up" onClick={handleDownloadCV}>
         Download CV

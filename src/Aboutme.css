@@ -59,6 +59,7 @@
 @media (max-width: 1200px) {
   .Aboutme-dis {
     max-width: 70%;
+    line-height: 1.6;
   }
   .Aboutme-aboutme {
     font-size: 12vw;

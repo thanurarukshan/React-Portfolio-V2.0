@@ -7,12 +7,14 @@ import Aboutme from "./Aboutme";
 import Skillset from "./Skillset";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import Experience from "./Experience";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
     <Aboutme />
+    <Experience/>
     <Skillset />
     <Projects />
     <Footer />
