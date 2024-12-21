@@ -20,6 +20,9 @@ function Projects() {
   const handleDivClick5 = () => {
     window.location.href = 'https://github.com/thanurarukshan';
   }
+  const handleDivClick6 = () => {
+    window.location.href = 'https://github.com/thanurarukshan/diff-PRO';
+  }
   useEffect(() => {
     AOS.init();
   }, []);
@@ -30,6 +33,11 @@ function Projects() {
           Projects
         </span>
         <div className="Skillset-skill-des">
+          <div data-aos="fade-up" onClick={handleDivClick6}>
+            <span id="title">Diff-Pro | A tool for Advanced File/Directories Comparison</span>
+            <span id="title-content">Shell Scripting</span>
+            <span id="title-content">A shell-based tool designed to compare file/directory structures within the same server or two seperate servers.</span>
+          </div>
           <div data-aos="fade-up" onClick={handleDivClick1}>
             <span id="title">Portfolio Website (Solo Project)</span>
             <span id="title-content">React JS, JavaScript, HTML, CSS, Firebase Hosting</span>
@@ -38,7 +46,7 @@ function Projects() {
           <div data-aos="fade-up" onClick={handleDivClick2}>
             <span id="title">Property Selling web app (Duo Project)</span>
             <span id="title-content">React JS, JavaScript, HTML, CSS, MySQL, JSON</span>
-            <span id="title-content">used react hooks where necessary, used single json file to fetch data, drag and drop, advanced search. Completed within two days</span>
+            <span id="title-content">used react hooks where necessary, used single json file to fetch data, drag and drop, advanced search.</span>
           </div>
           <div data-aos="fade-up" onClick={handleDivClick3}>
             <span id="title">Project UniHelper (Solo Project)</span>

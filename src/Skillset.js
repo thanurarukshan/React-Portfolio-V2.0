@@ -1,4 +1,4 @@
-import Logoslider from "./Logoslider";
+// import Logoslider from "./Logoslider";
 import "./Skillset.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -66,7 +66,7 @@ function Skillset() {
           </div>
         </div>
       </div>
-      <Logoslider className="Skillset-bar" />
+      {/* <Logoslider className="Skillset-bar" /> */}
     </div>
   );
 }

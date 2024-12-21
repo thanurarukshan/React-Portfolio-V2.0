@@ -2,7 +2,7 @@ import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import New from "./assets/May20.pdf"; // cv
+import New from "./assets/Dec21.pdf"; // cv
 function Aboutme() {
   const handleDownloadCV = () => {
     window.open(New);

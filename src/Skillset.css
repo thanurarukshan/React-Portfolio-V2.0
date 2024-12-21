@@ -25,6 +25,7 @@
 }
 
 .Skillset-skill-des {
+  min-width: 1200px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -64,10 +65,15 @@
     margin: 20px;
   }
   .Skillset-skill-des {
+    
     display: flex;
     flex-direction: column;
-    max-width: 95%;
+    max-width: 100vw;
+    min-width: 95vw;
   }
+  /* .Skillset-skill-des div {
+    min-width:80vw;
+  } */
   #title {
     font-size: 25px;
   }

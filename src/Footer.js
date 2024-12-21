@@ -7,6 +7,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { GitHub } from "@mui/icons-material";
+// import Logoslider from "./Logoslider";
 
 function Footer() {
   return (
@@ -33,9 +34,10 @@ function Footer() {
           </a>
         </div>
         <span id="footer-main-span">
-          Copyright © 2024 | All Rights Reserved
+          Copyright © 2025 | All Rights Reserved
         </span>
-        <span>Thanks for Visit</span>
+        <span id="footer-main-span2">Thanks for Visit</span>
+        {/* <Logoslider className="Skillset-bar" /> */}
       </div>
     </div>
   );

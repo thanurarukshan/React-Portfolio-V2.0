@@ -29,3 +29,10 @@
 .footer-main-flex span {
   font-size: 60%;
 }
+#footer-main-span {
+  margin-top: 5px;
+}
+#footer-main-span2 {
+  margin-top: 5px;
+  font-weight: 100;
+}
