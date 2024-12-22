@@ -36,6 +36,12 @@ body {
   scale: 110%;
   transition: 1s;
 }
+.App-hash02 {
+  font-weight: 100;
+}
+.App-hash01 {
+  font-weight: 500;
+}
 
 .App-name {
   font-family: "masque";

@@ -1,5 +1,5 @@
 // import Logoslider from "./Logoslider";
-import "./Skillset.css";
+import "./Certifications.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,54 +12,65 @@ function Skillset() {
     <div className="Skillset">
       <div className="Skillset-skill">
         <span className="Skillset-skill-name" data-aos="fade-up">
-          Skillset
+          Certifications
         </span>
         <div className="Skillset-skill-des">
           <div data-aos="fade-up">
-            <span id="title">Languages</span>
-            <span id="title-content">Python, JavaScript, Java</span>
+            <span id="title">AWS Academy – Cloud Foundations</span>
+            <span id="title-content">AWS</span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Cloud/DevOps</span>
+            <span id="title">Introduction to Containers, Docker, Kubernetes and OpenShift  </span>
             <span id="title-content">
-              Docker, Kubernetes, Ansible, OpenShift, CI, CD, AWS, GitHub Actions, Tekton, Prometheus, Alert Manager, Grafana
+              Coursera
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Database</span>
+            <span id="title">Containers and Kubernetes Essentials</span>
             <span id="title-content">
-              MySQL, MongoDB
+              Coursera
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Software Engineering</span>
+            <span id="title">Linux for Developers</span>
             <span id="title-content">
-              Agile, OOP(Object Oriented Programming), Shell/Bash Scripting, Scrum, Git, Linux, Data Structures and Algorithms 
+              Coursera 
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Networking</span>
+            <span id="title">Cloud Computing Foundations </span>
             <span id="title-content">
-              Networking Fundamentals, Network Security
+              Great Learning
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Web Development - Front End</span>
+            <span id="title">Cloud Foundations - Advanced</span>
             <span id="title-content">
-              Html, CSS, JS, Reactjs, Nextjs
+              Great Learning
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Web Development - Back End</span>
+            <span id="title">AWS for Beginners</span>
             <span id="title-content">
-              Nodejs, Expressjs
+              Great Learning 
             </span>
           </div>
           <div data-aos="fade-up">
-            <span id="title">Graphic Design</span>
+            <span id="title">Data Structures and Algorithms in Java for Intermediate Level</span>
             <span id="title-content">
-              Adobe Photoshop, Adobe Illustrator, Adobe Premiere-Pro, Adobe
-              After-Effects, Adobe Lightroom
+              Great Learning
+            </span>
+          </div>
+          <div data-aos="fade-up">
+            <span id="title">Introduction to Agile Development and Scrum</span>
+            <span id="title-content">
+              Coursera
+            </span>
+          </div>
+          <div data-aos="fade-up">
+            <span id="title">Networks and Network Security</span>
+            <span id="title-content">
+              Coursera
             </span>
           </div>
         </div>

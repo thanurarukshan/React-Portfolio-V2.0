@@ -8,6 +8,7 @@ import Skillset from "./Skillset";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import Experience from "./Experience";
+import Certifications from "./Certifications";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Experience/>
     <Skillset />
     <Projects />
+    <Certifications />
     <Footer />
   </React.StrictMode>,
 );

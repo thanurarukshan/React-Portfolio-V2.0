@@ -32,7 +32,7 @@ function Projects() {
         <span className="Skillset-skill-name" data-aos="fade-up">
           Experience
         </span>
-        <div className="Skillset-skill-des">
+        <div className="Skillset-skill-des-experience">
           <div data-aos="fade-up" onClick={handleDivClick1}>
             <span id="title">Trainee DevOps Engineer</span>
             <span id="title-content" className="sub-title">hSenid Mobile Solutions</span>
