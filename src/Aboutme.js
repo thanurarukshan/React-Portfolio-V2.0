@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -18,6 +19,7 @@ function Aboutme() {
         src="./Thanurawithframe.png"
         className="Aboutme-me"
         data-aos="fade-up"
+        alt="Me"
       />
       <span className="Aboutme-aboutme" data-aos="fade-up">
         Aboutme
