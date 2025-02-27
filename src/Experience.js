@@ -8,21 +8,21 @@ function Projects() {
   const handleDivClick1 = () => {
     window.location.href = 'https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all';
   }
-  const handleDivClick2 = () => {
-    window.location.href = 'https://github.com/thanurarukshan/property-selling-web-app-static';
-  }
-  const handleDivClick3 = () => {
-    window.location.href = 'https://unihelperlk.web.app/';
-  }
-  const handleDivClick4 = () => {
-    window.location.href = 'https://github.com/thanurarukshan/Rest-API-Node-Back-End';
-  }
-  const handleDivClick5 = () => {
-    window.location.href = 'https://github.com/thanurarukshan';
-  }
-  const hSenid = () => {
-    window.location.href = 'https://hsenidmobile.com/';
-  }
+  // const handleDivClick2 = () => {
+  //   window.location.href = 'https://github.com/thanurarukshan/property-selling-web-app-static';
+  // }
+  // const handleDivClick3 = () => {
+  //   window.location.href = 'https://unihelperlk.web.app/';
+  // }
+  // const handleDivClick4 = () => {
+  //   window.location.href = 'https://github.com/thanurarukshan/Rest-API-Node-Back-End';
+  // }
+  // const handleDivClick5 = () => {
+  //   window.location.href = 'https://github.com/thanurarukshan';
+  // }
+  // const hSenid = () => {
+  //   window.location.href = 'https://hsenidmobile.com/';
+  // }
   useEffect(() => {
     AOS.init();
   }, []);
