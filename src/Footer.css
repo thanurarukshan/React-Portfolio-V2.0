@@ -1,8 +1,7 @@
 .footer-main {
   display: flex;
   color: white;
-  background-color: #091d36;
-  padding: 200px 0px;
+  padding: 100px 0px;
   justify-content: center;
   align-items: center;
   min-width: 100vw;

@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@fontsource/montserrat": "^5.2.7",
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "@testing-library/jest-dom": "^6.8.0",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1"
   }
 }

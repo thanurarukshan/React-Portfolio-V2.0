@@ -23,21 +23,25 @@ function App() {
   return (
     <div className="App">
       <span className="App-name">
-        <span>T</span>
-        <span>H</span>
-        <span>A</span>
-        <span>N</span>
-        <span>U</span>
-        <span>R</span>
-        <span>A</span>
-        <span> </span>
-        <span>R</span>
-        <span>U</span>
-        <span>K</span>
-        <span>S</span>
-        <span>H</span>
-        <span>A</span>
-        <span>N</span>
+        <div>
+          <span>T</span>
+          <span>H</span>
+          <span>A</span>
+          <span>N</span>
+          <span>U</span>
+          <span>R</span>
+          <span>A</span>
+          {/* <span> </span> */}
+        </div>
+        <div>
+          <span>R</span>
+          <span>U</span>
+          <span>K</span>
+          <span>S</span>
+          <span>H</span>
+          <span>A</span>
+          <span>N</span>
+        </div>
       </span>
       <div className="App-hash">
         <span className="App-hash01"># </span>
@@ -46,6 +50,7 @@ function App() {
           <Cursor />
         </span>
       </div>
+      <span className="App-iconname">find me on </span>
       <div className="App-iconbar">
         <a href="https://www.linkedin.com/in/thanura-rukshan-8b610b169/?originalSubdomain=lk">
           <LinkedInIcon className="App-iconbar-icons" />

@@ -7,16 +7,6 @@
   src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
 }
 
-body {
-  background-image: url(../public/flat-mountains.svg);
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  color: white;
-}
 
 .App {
   display: flex;
@@ -27,6 +17,7 @@ body {
   animation-name: appear;
   animation-duration: 4s;
 }
+
 
 .App-iconbar-icons {
   transition: 1s;
@@ -44,8 +35,9 @@ body {
 }
 
 .App-name {
-  font-family: "masque";
-  font-size: 50px;
+  font-family: 'Montserrat';
+  font-size: 70px;
+  font-weight: 700;
 }
 @keyframes appear {
   from {
@@ -66,7 +58,7 @@ body {
 
 .App-name span:hover {
   color: aqua;
-  font-size: 70px;
+  font-size: 80px;
   transition: 1s;
 }
 
@@ -81,7 +73,12 @@ body {
 }
 
 .App-iconbar {
-  margin-top: 7px;
+  scale: 75%;
+}
+
+.App-iconname {
+  margin-top: 100px;
+  margin-bottom: 7px;
 }
 
 .App-iconbar-icons {
@@ -96,6 +93,8 @@ body {
   z-index: 100;
   scale: 10vw;
   transform: translateY(30vh);
+  margin-top: 300px;
+  scale: 50%;
 }
 .App-scroll span {
   display: block;
@@ -130,7 +129,9 @@ body {
 
 @media (max-width: 1200px) {
   .App-name {
-    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 15vw;
   }
   .App-iconbar-icons {
     padding: 8px;
@@ -140,7 +141,15 @@ body {
     font-size: 20px;
   }
   .App-iconbar {
-    margin-top: 6px;
     max-width: 80%;
+    scale: 90%;
+  }
+  .App-iconname {
+    margin-top: 100px;
+  }
+  .App-name span:hover {
+    color: aqua;
+    font-size: 17vw;
+    transition: 1s;
   }
 }

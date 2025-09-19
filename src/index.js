@@ -10,6 +10,12 @@ import Footer from "./Footer";
 import Experience from "./Experience";
 import Certifications from "./Certifications";
 
+//font
+import '@fontsource/montserrat';
+import '@fontsource/montserrat/500.css';
+import '@fontsource/montserrat/700.css';
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

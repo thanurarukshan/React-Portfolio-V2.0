@@ -3,6 +3,7 @@ import "./Skillset.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import Tile from "./components/Tile";
 
 function Skillset() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Skillset() {
         <span className="Skillset-skill-name" data-aos="fade-up">
           Skillset
         </span>
+        {/* <Tile title="test" content="test-content"/> */}
         <div className="Skillset-skill-des">
           <div data-aos="fade-up">
             <span id="title">Languages</span>

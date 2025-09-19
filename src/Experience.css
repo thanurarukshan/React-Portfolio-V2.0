@@ -3,11 +3,11 @@
   src: url(../public/MASQUE__.ttf);
 }
 .Skillset {
+  background-color: transparent !important;
   margin-top: -5px;
   /* padding-top: 50px; */
   padding-bottom: 100px;
-  color: black;
-  background-color: white;
+  color: white;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -20,6 +20,7 @@
   font-family: "sans";
   font-size: 80px;
   font-weight: 100 !important;
+  color: white;
 }
 
 .Skillset-skill {
@@ -52,7 +53,6 @@
 .Skillset-skill-des-experience div:hover {
   scale: 105%;
   transition: 1s;
-  color: aqua;
 }
 
 #title {
