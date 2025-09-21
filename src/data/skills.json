@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Languages",
+    "items": ["Python", "JavaScript", "Java"]
+  },
+  {
+    "title": "Cloud/DevOps",
+    "items": [
+      "Docker",
+      "Kubernetes",
+      "Ansible",
+      "OpenShift",
+      "CI",
+      "CD",
+      "AWS",
+      "GitHub Actions",
+      "Tekton",
+      "Prometheus",
+      "Alert Manager",
+      "Grafana"
+    ]
+  },
+  {
+    "title": "Database",
+    "items": ["MySQL", "MongoDB"]
+  },
+  {
+    "title": "Software Engineering",
+    "items": [
+      "Agile",
+      "OOP (Object Oriented Programming)",
+      "Shell/Bash Scripting",
+      "Scrum",
+      "Git",
+      "Linux",
+      "Data Structures and Algorithms"
+    ]
+  },
+  {
+    "title": "Networking",
+    "items": ["Networking Fundamentals", "Network Security"]
+  },
+  {
+    "title": "Web Development - Front End",
+    "items": ["HTML", "CSS", "JavaScript", "ReactJS", "NextJS"]
+  },
+  {
+    "title": "Web Development - Back End",
+    "items": ["NodeJS", "ExpressJS"]
+  },
+  {
+    "title": "Graphic Design",
+    "items": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe Premiere-Pro",
+      "Adobe After-Effects",
+      "Adobe Lightroom"
+    ]
+  }
+]

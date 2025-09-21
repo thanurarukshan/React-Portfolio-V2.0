@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Diff-Pro | Advanced File/Directories Comparison",
+    "tech": "Shell Scripting",
+    "description": "A shell-based tool designed to compare file/directory structures within the same server or two separate servers.",
+    "link": "https://github.com/thanurarukshan/diff-PRO"
+  },
+  {
+    "title": "Portfolio Website",
+    "tech": "React JS, JavaScript, HTML, CSS, Firebase Hosting",
+    "description": "Used React JS framework for better performance and libraries like AOS for better visuals.",
+    "link": "https://github.com/thanurarukshan/React-Portfolio-V2.0"
+  },
+  {
+    "title": "Property Selling Web App",
+    "tech": "React JS, JavaScript, HTML, CSS, MySQL, JSON",
+    "description": "Used React hooks where necessary, single JSON file to fetch data, drag-and-drop, advanced search.",
+    "link": "https://github.com/thanurarukshan/property-selling-web-app-static"
+  },
+  {
+    "title": "Project UniHelper",
+    "tech": "HTML, CSS, JavaScript, React JS, Firebase Hosting",
+    "description": "Static web app created as a community engagement project.",
+    "link": "https://unihelperlk.web.app/"
+  },
+  {
+    "title": "REST API Demonstration",
+    "tech": "React JS, JavaScript, Node JS, Express JS",
+    "description": "Created a simple CRUD application for learning purposes.",
+    "link": "https://github.com/thanurarukshan/Rest-API-Node-Back-End"
+  },
+  {
+    "title": "For More...",
+    "tech": "GitHub",
+    "description": "",
+    "link": "https://github.com/thanurarukshan"
+  }
+]

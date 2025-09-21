@@ -1,0 +1,12 @@
+[
+  { "title": "AWS Academy – Cloud Foundations", "issuer": "AWS" },
+  { "title": "Introduction to Containers, Docker, Kubernetes and OpenShift", "issuer": "Coursera" },
+  { "title": "Containers and Kubernetes Essentials", "issuer": "Coursera" },
+  { "title": "Linux for Developers", "issuer": "Coursera" },
+  { "title": "Cloud Computing Foundations", "issuer": "Great Learning" },
+  { "title": "Cloud Foundations - Advanced", "issuer": "Great Learning" },
+  { "title": "AWS for Beginners", "issuer": "Great Learning" },
+  { "title": "Data Structures and Algorithms in Java for Intermediate Level", "issuer": "Great Learning" },
+  { "title": "Introduction to Agile Development and Scrum", "issuer": "Coursera" },
+  { "title": "Networks and Network Security", "issuer": "Coursera" }
+]
