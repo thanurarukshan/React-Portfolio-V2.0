@@ -2,15 +2,11 @@ import "./Experience.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import experiences from "./data/experiences.json"; // make sure this file exists in the same folder
 
-function Projects() {
-  const handleDivClick1 = () => {
-    window.location.href =
-      "https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all";
-  };
-
+function Experience() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
@@ -20,51 +16,40 @@ function Projects() {
           Experience
         </span>
 
+        {/* ONE wrapper with the class your CSS expects */}
         <div className="Skillset-skill-des-experience">
-          <div data-aos="fade-up" onClick={handleDivClick1}>
-            <span id="title">Trainee DevOps Engineer</span>
-            <span id="title-content" className="sub-title">
-              hSenid Mobile Solutions
-            </span>
+          {experiences.map((exp, idx) => (
+            /* each child <div> is a "card" and will match `.Skillset-skill-des-experience div` CSS */
+            <div
+              key={idx}
+              data-aos="fade-up"
+              onClick={() =>
+                exp.link &&
+                window.open(exp.link, "_blank", "noopener,noreferrer")
+              }
+              role={exp.link ? "link" : "article"}
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && exp.link)
+                  window.open(exp.link, "_blank", "noopener,noreferrer");
+              }}
+            >
+              <span id="title">{exp.title}</span>
+              <span id="title-content" className="sub-title">
+                {exp.company}
+              </span>
 
-            <ul className="experience-list">
-              <li>
-                Automated tasks with <b>Ansible</b> (Disk Partitioning, OS Setup) to
-                save time across multiple servers.
-              </li>
-              <li>
-                Applied <b>Security Hardening</b> on Apache (CIS Apache 2.4) via config
-                changes, privilege, and permission tuning.
-              </li>
-              <li>
-                Worked with <b>PCS Clusters</b> to support web server HA & load
-                balancing.
-              </li>
-              <li>
-                Performed <b>API Endpoint Testing</b> (Postman, curl, Wiremock) after
-                security patching.
-              </li>
-              <li>
-                Configured <b>System Monitoring</b> (Grafana, Prometheus, SNMP
-                Notifier, Alertmanager, Node Exporter) with email alerts.
-              </li>
-              <li>
-                Developed <b>Shell Scripts</b> for backup, log rolling, monitoring, and
-                a Linux tool for directory comparison (permissions, ownership, content).
-              </li>
-              <li>
-                Worked in <b>Agile sprints</b> with daily standups (SDLC).
-              </li>
-              <li>
-                Gained experience in Git workflows, Linux filesystems, networking, and
-                system hardening.
-              </li>
-            </ul>
-          </div>
+              <ul className="experience-list">
+                {exp.details.map((detail, i) => (
+                  <li key={i}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-export default Projects;
+export default Experience;

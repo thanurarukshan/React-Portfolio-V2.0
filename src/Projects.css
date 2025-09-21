@@ -56,9 +56,11 @@
 #title {
   font-weight: 600;
   font-size: 30px;
+  text-align: center;
 }
 #title-content {
   font-weight: 200;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

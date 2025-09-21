@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Trainee DevOps Engineer",
+    "company": "hSenid Mobile Solutions",
+    "link": "https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all",
+    "details": [
+      "Automated tasks with Ansible (Disk Partitioning, OS Setup) to save time across multiple servers.",
+      "Applied Security Hardening on Apache (CIS Apache 2.4) via config changes, privilege, and permission tuning.",
+      "Worked with PCS Clusters to support web server HA & load balancing.",
+      "Performed API Endpoint Testing (Postman, curl, Wiremock) after security patching.",
+      "Configured System Monitoring (Grafana, Prometheus, SNMP Notifier, Alertmanager, Node Exporter) with email alerts.",
+      "Developed Shell Scripts for backup, log rolling, monitoring, and a Linux tool for directory comparison (permissions, ownership, content).",
+      "Worked in Agile sprints with daily standups (SDLC).",
+      "Gained experience in Git workflows, Linux filesystems, networking, and system hardening."
+    ]
+  }
+]
