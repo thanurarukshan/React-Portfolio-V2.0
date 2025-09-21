@@ -64,7 +64,7 @@
   transition: 1s !important;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (orientation: portrait) {
   .Aboutme-dis {
     margin-top: 10px;
     max-width: 70%;

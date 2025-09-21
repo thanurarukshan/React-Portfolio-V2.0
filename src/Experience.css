@@ -55,6 +55,19 @@
   transition: 1s;
 }
 
+.experience-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.experience-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f0f0f0; /* or white */
+}
+
 #title {
   font-weight: 600;
   font-size: 30px;
@@ -66,7 +79,7 @@
   font-size: 20px;
   font-weight: 400 !important;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (orientation: portrait) {
   .Skillset-skill-name {
     font-size: 12vw;
     margin: 20px;

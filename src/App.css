@@ -127,11 +127,11 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (orientation: portrait) {
   .App-name {
     display: flex;
     flex-direction: column;
-    font-size: 15vw;
+    font-size: 13vw;
   }
   .App-iconbar-icons {
     padding: 8px;
@@ -151,5 +151,13 @@
     color: aqua;
     font-size: 17vw;
     transition: 1s;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .App-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 15vw;
   }
 }
