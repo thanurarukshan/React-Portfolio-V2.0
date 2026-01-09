@@ -7,40 +7,37 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { GitHub } from "@mui/icons-material";
+import { portfolioData } from "./data/portfolioData";
 
 function App() {
   const [text] = useTypewriter({
-    words: [
-      "DevOps Enthusiast",
-      "Engineering Undergraduate",
-      "Cloud Enthusiast",
-      "AWS Trained",
-      "Freelancer",
-    ],
+    words: portfolioData.roles,
     loop: {},
   });
+
+  const iconMap = {
+    LinkedIn: LinkedInIcon,
+    GitHub: GitHub,
+    Facebook: FacebookIcon,
+    Instagram: InstagramIcon,
+    Email: EmailIcon,
+    WhatsApp: WhatsAppIcon
+  };
 
   return (
     <div className="App">
       <span className="App-name">
         <div>
-          <span>T</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
-          <span>U</span>
-          <span>R</span>
-          <span>A</span>
-          {/* <span> </span> */}
+          {/* First part of name: THANURA */}
+          {portfolioData.nameParts[0].split('').map((char, index) => (
+            <span key={index}>{char}</span>
+          ))}
         </div>
         <div>
-          <span>R</span>
-          <span>U</span>
-          <span>K</span>
-          <span>S</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
+          {/* Second part of name: RUKSHAN */}
+          {portfolioData.nameParts[1].split('').map((char, index) => (
+            <span key={index}>{char}</span>
+          ))}
         </div>
       </span>
       <div className="App-hash">
@@ -52,24 +49,14 @@ function App() {
       </div>
       <span className="App-iconname">find me on </span>
       <div className="App-iconbar">
-        <a href="https://www.linkedin.com/in/thanura-rukshan-8b610b169/?originalSubdomain=lk">
-          <LinkedInIcon className="App-iconbar-icons" />
-        </a>
-        <a href="https://github.com/thanurarukshan">
-          <GitHub className="App-iconbar-icons" />
-        </a>
-        <a href="https://www.facebook.com/thanura.rukshan.5">
-          <FacebookIcon className="App-iconbar-icons" />
-        </a>
-        <a href="https://www.instagram.com/thanura_rukshan/">
-          <InstagramIcon className="App-iconbar-icons" />
-        </a>
-        <a href="mailto:thanurarukshan2000@gmail.com">
-          <EmailIcon className="App-iconbar-icons" />
-        </a>
-        <a href="https://wa.me/+94779371866">
-          <WhatsAppIcon className="App-iconbar-icons" />
-        </a>
+        {portfolioData.socialLinks.map((link, index) => {
+          const IconComponent = iconMap[link.icon];
+          return (
+            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+              {IconComponent && <IconComponent className="App-iconbar-icons" />}
+            </a>
+          );
+        })}
       </div>
       <a className="App-scroll" href="#aboutMe">
         <span></span>
