@@ -19,9 +19,12 @@ code {
 body {
   /* background-image: url(../public/flat-mountains.svg); */
   /* Plasmatic Waves Background */
-  background: linear-gradient(-45deg, #000000, #2c0b2e, #004e66, #001f3f);
+  background-color: black;
+  /* Using RGBA for 40% opacity effect over black background */
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.4), rgba(44, 11, 46, 0.4), rgba(0, 78, 102, 0.4), rgba(0, 31, 63, 0.4));
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  /* Increased duration to 30s for slower speed */
+  animation: gradientBG 30s ease infinite;
 
   background-attachment: fixed;
   display: flex;
