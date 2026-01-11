@@ -1,12 +1,14 @@
 [
   {
     "title": "Languages",
-    "items": ["Python", "JavaScript", "Java"]
+    "items": ["Python", "JavaScript (JS)", "Java", "TypeScript (TS)", "R"]
   },
   {
     "title": "Cloud/DevOps",
     "items": [
+      "Linux",
       "Docker",
+      "Docker Compose",
       "Kubernetes",
       "Ansible",
       "OpenShift",
@@ -21,8 +23,8 @@
     ]
   },
   {
-    "title": "Database",
-    "items": ["MySQL", "MongoDB"]
+    "title": "Databases",
+    "items": ["MySQL", "MongoDB", "Redis"]
   },
   {
     "title": "Software Engineering",
@@ -37,25 +39,47 @@
     ]
   },
   {
+    "title": "Machine Learning",
+    "items": [
+      "Python (NumPy, Pandas)",
+      "TensorFlow",
+      "Data visualization"
+    ]
+  },
+  {
     "title": "Networking",
-    "items": ["Networking Fundamentals", "Network Security"]
+    "items": [
+      "Networking Fundamentals",
+      "Network Security",
+      "TCP/IP",
+      "DNS",
+      "VPC",
+      "Security Groups",
+      "Load Balancing",
+      "SSH"
+    ]
   },
   {
-    "title": "Web Development - Front End",
-    "items": ["HTML", "CSS", "JavaScript", "ReactJS", "NextJS"]
+    "title": "Web - Frontend",
+    "items": ["HTML", "CSS", "React JS", "Next JS", "UI/UX (Figma)"]
   },
   {
-    "title": "Web Development - Back End",
-    "items": ["NodeJS", "ExpressJS"]
+    "title": "Mobile App",
+    "items": ["React Native"]
+  },
+  {
+    "title": "Backend",
+    "items": ["Node JS", "Express JS"]
   },
   {
     "title": "Graphic Design",
     "items": [
       "Adobe Photoshop",
       "Adobe Illustrator",
-      "Adobe Premiere-Pro",
-      "Adobe After-Effects",
-      "Adobe Lightroom"
+      "Adobe Premiere Pro",
+      "Adobe After Effects",
+      "Adobe Lightroom",
+      "Figma"
     ]
   }
 ]

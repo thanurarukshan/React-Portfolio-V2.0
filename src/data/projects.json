@@ -1,38 +1,50 @@
 [
   {
-    "title": "Diff-Pro | Advanced File/Directories Comparison",
-    "tech": "Shell Scripting",
-    "description": "A shell-based tool designed to compare file/directory structures within the same server or two separate servers.",
-    "link": "https://github.com/thanurarukshan/diff-PRO"
+    "title": "Linux RHEL Server Setup & Hardening",
+    "tech": "Ansible, Linux (RHEL), Network Configuration, System Tuning",
+    "description": "An automated approach to configuring, managing, and monitoring network and system settings on multiple Linux servers with a focus on security hardening.",
+    "link": "https://github.com/thanurarukshan/Linux_RHEL_Server_Setup"
   },
   {
-    "title": "Portfolio Website",
-    "tech": "React JS, JavaScript, HTML, CSS, Firebase Hosting",
-    "description": "Used React JS framework for better performance and libraries like AOS for better visuals.",
+    "title": "DocRecords (Multiple Deployments)",
+    "tech": "K3s, Docker, Docker Compose, React JS, Node JS, Microservices",
+    "description": "A microservices-based application featuring complex orchestration across multiple environments including Kubernetes (K3s), Docker Compose, and local setups.",
+    "link": "https://github.com/thanurarukshan?tab=repositories&q=DocRecords"
+  },
+  {
+    "title": "Portfolio with CD Pipeline",
+    "tech": "React JS, GitHub Actions, Firebase Hosting, JavaScript",
+    "description": "A high-performance portfolio website with a fully automated Continuous Deployment (CD) pipeline to streamline updates and hosting.",
     "link": "https://github.com/thanurarukshan/React-Portfolio-V2.0"
   },
   {
+    "title": "Diff-Pro | Advanced File Comparison",
+    "tech": "Shell Scripting, Linux",
+    "description": "A Linux-based tool designed for advanced file and directory structure comparison across local or remote servers.",
+    "link": "https://github.com/thanurarukshan/diff-PRO"
+  },
+  {
     "title": "Property Selling Web App",
-    "tech": "React JS, JavaScript, HTML, CSS, MySQL, JSON",
-    "description": "Used React hooks where necessary, single JSON file to fetch data, drag-and-drop, advanced search.",
+    "tech": "React JS, JavaScript, MySQL, JSON",
+    "description": "A static web application featuring advanced search and drag-and-drop functionality, optimized using React hooks and JSON-based data fetching.",
     "link": "https://github.com/thanurarukshan/property-selling-web-app-static"
   },
   {
     "title": "Project UniHelper",
     "tech": "HTML, CSS, JavaScript, React JS, Firebase Hosting",
-    "description": "Static web app created as a community engagement project.",
+    "description": "A community engagement static web app designed to provide academic assistance and resources.",
     "link": "https://unihelperlk.web.app/"
   },
   {
     "title": "REST API Demonstration",
-    "tech": "React JS, JavaScript, Node JS, Express JS",
-    "description": "Created a simple CRUD application for learning purposes.",
+    "tech": "Node JS, Express JS, React JS",
+    "description": "A full-stack CRUD application built to demonstrate RESTful API architecture and backend-to-frontend integration.",
     "link": "https://github.com/thanurarukshan/Rest-API-Node-Back-End"
   },
   {
     "title": "For More...",
     "tech": "GitHub",
-    "description": "",
+    "description": "Explore more projects and contributions on my GitHub profile.",
     "link": "https://github.com/thanurarukshan"
   }
 ]

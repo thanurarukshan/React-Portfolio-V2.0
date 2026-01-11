@@ -2,13 +2,16 @@
   0% {
     scale: 100%;
   }
+
   50% {
     scale: 101%;
   }
+
   100% {
     scale: 100%;
   }
 }
+
 .Aboutme {
   color: white;
   min-width: 100vw;
@@ -19,10 +22,12 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .Aboutme-aboutme {
   font-size: 80px;
   font-weight: 600;
 }
+
 .Aboutme-dis {
   max-width: 600px;
   text-align: center;
@@ -32,13 +37,24 @@
 }
 
 .Aboutme-dis-word {
-    color: aqua;
+  color: aqua;
 }
 
-.Aboutme-me {
+/* .Aboutme-me {
   width: 300px;
   animation: grow 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px aqua);
+} */
+
+.Aboutme-me {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 10px 20px aqua);
+  animation: grow 2s ease-in-out infinite;
 }
+
 .Aboutme-me:hover {
   animation-play-state: paused;
 }
@@ -70,18 +86,23 @@
     max-width: 70%;
     line-height: 1.4;
     font-weight: 100;
-    text-align:center;
+    text-align: center;
   }
+
   .Aboutme-aboutme {
     font-size: 12vw;
   }
+
   .Aboutme-dis {
     font-size: 16px;
   }
-  
+
   .Aboutme-me {
     width: 250px;
+    height: 250px;
+    /* Ensure aspect ratio is maintained */
   }
+
   .Aboutme-cv {
     color: black;
     text-decoration: none;

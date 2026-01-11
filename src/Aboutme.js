@@ -3,7 +3,7 @@ import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import New from "./assets/Dec21.pdf"; // cv
+import New from "./assets/2026New.pdf"; // cv
 function Aboutme() {
   const handleDownloadCV = () => {
     window.open(New);
@@ -16,7 +16,7 @@ function Aboutme() {
   return (
     <div className="Aboutme" id="aboutMe">
       <img
-        src="./Thanurawithframe.png"
+        src="./professionalme2026.png"
         className="Aboutme-me"
         data-aos="fade-up"
         alt="Me"
