@@ -12,11 +12,15 @@
   }
 }
 
+
+
 .Aboutme {
   color: white;
   min-width: 100vw;
   min-height: 100vh;
-  /*background-color: black; */
+
+  /* Plasmatic Waves Background moved to global index.css */
+
   display: flex;
   align-items: center;
   justify-content: center;

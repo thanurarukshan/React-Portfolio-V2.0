@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   max-width: 100vw !important;
@@ -17,12 +18,29 @@ code {
 
 body {
   /* background-image: url(../public/flat-mountains.svg); */
-  background-image: linear-gradient(to top, #05002a, #0b0b32, #12123b, #1a1843, #231d4c);
-  background-size: cover;
+  /* Plasmatic Waves Background */
+  background: linear-gradient(-45deg, #000000, #2c0b2e, #004e66, #001f3f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   color: white;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

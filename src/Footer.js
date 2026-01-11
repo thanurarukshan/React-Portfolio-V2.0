@@ -34,7 +34,7 @@ function Footer() {
           </a>
         </div>
         <span id="footer-main-span">
-          Copyright © 2025 | All Rights Reserved.
+          Copyright © 2026 | All Rights Reserved.
         </span>
         <span id="footer-main-span2">Thanks for Visit</span>
         {/* <Logoslider className="Skillset-bar" /> */}
