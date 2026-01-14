@@ -30,8 +30,10 @@
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px; /* ✅ only spacing between cards */
-  align-items: stretch; /* cards align in height */
+  gap: 0px;
+  /* ✅ only spacing between cards */
+  align-items: stretch;
+  /* cards align in height */
 }
 
 .Skillset-skill-des div {
@@ -63,29 +65,36 @@
   font-weight: 600;
   font-size: 30px;
 }
+
 #title-content {
   font-weight: 200;
 }
 
-@media (max-width: 1200px) and (orientation: portrait) {
+@media (max-width: 1200px) {
   .Skillset-skill-name {
     font-size: 12vw;
     margin: 20px;
   }
+
   .Skillset-skill-des {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
     min-width: 95vw;
   }
+
   .Skillset-skill-des div {
-    min-height: auto;   /* let content decide height */
-    max-height: none;   /* remove fixed cap */
+    min-height: auto;
+    /* let content decide height */
+    max-height: none;
+    /* remove fixed cap */
     overflow-y: visible;
   }
+
   #title {
     font-size: 25px;
   }
+
   #title-content {
     font-size: 15px;
   }

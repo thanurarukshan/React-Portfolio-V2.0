@@ -84,7 +84,7 @@
   transition: 1s !important;
 }
 
-@media (max-width: 1200px) and (orientation: portrait) {
+@media (max-width: 1200px) {
   .Aboutme-dis {
     margin-top: 10px;
     max-width: 70%;
@@ -118,5 +118,27 @@
     font-weight: 600;
     user-select: none;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-height: 600px) {
+  .Aboutme-me {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Aboutme-aboutme {
+    font-size: 50px;
+  }
+
+  .Aboutme-dis {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .Aboutme-cv {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
   }
 }

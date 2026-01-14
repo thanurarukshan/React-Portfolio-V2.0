@@ -33,7 +33,8 @@ body {
   top: 0px;
   z-index: 100;
 }
-@media (orientation: portrait) {
+
+@media (max-width: 768px) {
   .headerbar {
     padding: 6% 4%;
   }
