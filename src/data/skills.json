@@ -11,6 +11,7 @@
       "Docker Compose",
       "Kubernetes",
       "Ansible",
+      "Terraform",
       "OpenShift",
       "CI",
       "CD",
@@ -42,8 +43,8 @@
     "title": "Machine Learning",
     "items": [
       "Python (NumPy, Pandas)",
-      "TensorFlow",
-      "Data visualization"
+      "Tensorflow",
+      "Data Visualization"
     ]
   },
   {

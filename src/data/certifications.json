@@ -1,6 +1,7 @@
 [
-  { "title": "AWS Academy – Cloud Foundations", "issuer": "AWS" },
+  { "title": "AWS Academy \u2013 Cloud Foundations", "issuer": "AWS" },
   { "title": "Introduction to Containers, Docker, Kubernetes and OpenShift", "issuer": "Coursera" },
+  { "title": "Continuous Integration and Continuous Delivery (CI/CD)", "issuer": "Coursera" },
   { "title": "Containers and Kubernetes Essentials", "issuer": "Coursera" },
   { "title": "Linux for Developers", "issuer": "Coursera" },
   { "title": "Cloud Computing Foundations", "issuer": "Great Learning" },

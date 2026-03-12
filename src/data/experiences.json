@@ -1,17 +1,29 @@
 [
   {
-    "title": "Trainee DevOps Engineer",
+    "title": "Trainee DevOps Engineer | 2024 July \u2013 2025 January",
     "company": "hSenid Mobile Solutions",
     "link": "https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all",
     "details": [
-      "Automated tasks with Ansible (Disk Partitioning, OS Setup) to save time across multiple servers.",
-      "Applied Security Hardening on Apache (CIS Apache 2.4) via config changes, privilege, and permission tuning.",
-      "Worked with PCS Clusters to support web server HA & load balancing.",
-      "Performed API Endpoint Testing (Postman, curl, Wiremock) after security patching.",
-      "Configured System Monitoring (Grafana, Prometheus, SNMP Notifier, Alertmanager, Node Exporter) with email alerts.",
-      "Developed Shell Scripts for backup, log rolling, monitoring, and a Linux tool for directory comparison (permissions, ownership, content).",
-      "Worked in Agile sprints with daily standups (SDLC).",
-      "Gained experience in Git workflows, Linux filesystems, networking, and system hardening."
+      "Automated OS setup and database provisioning using Ansible, reducing manual configuration time (MySQL, mongo DB binary installation).",
+      "Implemented CIS benchmarks for Apache 2.4, enhancing system security posture through automated configuration auditing and privilege refinement.",
+      "Experience with clustered systems (PCS Clusters), worked with web servers hosted on clustered systems to ensure high availability.",
+      "API Endpoint testing (Postman, curl, wiremock).",
+      "Designed and deployed a comprehensive monitoring stack using Prometheus, Grafana, and Alert Manager; configured custom SNMP exporters and node exporters to provide real-time visibility into service health and resource utilization.",
+      "Optimized a complex internal shell-based framework for automated file housekeeping and log rotation, significantly improving system disk space management and auditing efficiency.",
+      "Working in Agile environment, daily standups, SDLC.",
+      "Experience in Git environments, Linux filesystems/tools, networking concepts/diagrams, network hardening methodologies, OS hardening methodologies."
     ]
+  },
+  {
+    "title": "Freelance Developer and Designer | 2019 - 2022",
+    "company": "Outsourced Projects, Fiverr and Upwork",
+    "link": "",
+    "details": []
+  },
+  {
+    "title": "SLTC SOC 2.0 | 2023 - 2023",
+    "company": "SLTC Research University",
+    "link": "",
+    "details": []
   }
 ]

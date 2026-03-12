@@ -3,7 +3,7 @@ import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import New from "./assets/2026New.pdf"; // cv
+import New from "./assets/2026New2.pdf"; // cv
 function Aboutme() {
   const handleDownloadCV = () => {
     window.open(New);
@@ -22,7 +22,7 @@ function Aboutme() {
         alt="Me"
       />
       <span className="Aboutme-aboutme" data-aos="fade-up">
-        Aboutme
+        About Me
       </span>
       <span className="Aboutme-dis" data-aos="fade-up">
       Dedicated, passionate about IT, self-motivated, always try new things, fast learner, adapt quickly and<br/><span className="Aboutme-dis-word">seeking opportunities</span>

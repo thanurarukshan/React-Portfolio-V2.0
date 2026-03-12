@@ -48,7 +48,7 @@ export const portfolioData = {
         resumeLink: resume,
     },
     footer: {
-        copyright: "Copyright © 2025 | All Rights Reserved.",
+        copyright: "Copyright © 2026 | All Rights Reserved.",
         message: "Thanks for Visit"
     },
     header: {

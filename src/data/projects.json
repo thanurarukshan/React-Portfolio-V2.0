@@ -1,27 +1,33 @@
 [
   {
-    "title": "Linux RHEL Server Setup & Hardening",
-    "tech": "Ansible, Linux (RHEL), Network Configuration, System Tuning",
-    "description": "An automated approach to configuring, managing, and monitoring network and system settings on multiple Linux servers with a focus on security hardening.",
+    "title": "Linux RHEL Server Setup",
+    "tech": "Ansible, Linux, Network Configuration, System Tuning, Server Partitioning",
+    "description": "An automated approach to configuring, managing, and monitoring network and system settings on multiple Linux servers.",
     "link": "https://github.com/thanurarukshan/Linux_RHEL_Server_Setup"
   },
   {
+    "title": "Diff-Pro (A tool to Advanced File Comparison)",
+    "tech": "Shell Scripting, Linux",
+    "description": "A Linux-based tool for advanced file comparison. Used existing tool \u201cdiff\u201d and extend its functionality to walk through directories and find permission, ownership, content differences.",
+    "link": "https://github.com/thanurarukshan/diff-PRO"
+  },
+  {
     "title": "DocRecords (Multiple Deployments)",
-    "tech": "K3s, Docker, Docker Compose, React JS, Node JS, Microservices",
-    "description": "A microservices-based application featuring complex orchestration across multiple environments including Kubernetes (K3s), Docker Compose, and local setups.",
+    "tech": "Microservices Architecture, ReactJS, NodeJS, ExpressJS, Docker, Docker Compose, K3s",
+    "description": "A microservices based application with multiple deployments.",
     "link": "https://github.com/thanurarukshan?tab=repositories&q=DocRecords"
   },
   {
-    "title": "Portfolio with CD Pipeline",
-    "tech": "React JS, GitHub Actions, Firebase Hosting, JavaScript",
-    "description": "A high-performance portfolio website with a fully automated Continuous Deployment (CD) pipeline to streamline updates and hosting.",
-    "link": "https://github.com/thanurarukshan/React-Portfolio-V2.0"
+    "title": "SkillNet \u2013 ML Powered Networking Platform",
+    "tech": "Next.JS, Node.JS, MySQL, ML, Postman, Docker, Docker Compose, AWS",
+    "description": "A multi service application which connected to multiple ML models which serves as APIs. Hosted on AWS.",
+    "link": "https://github.com/thanurarukshan/SkillNet"
   },
   {
-    "title": "Diff-Pro | Advanced File Comparison",
-    "tech": "Shell Scripting, Linux",
-    "description": "A Linux-based tool designed for advanced file and directory structure comparison across local or remote servers.",
-    "link": "https://github.com/thanurarukshan/diff-PRO"
+    "title": "Portfolio with CD Pipeline",
+    "tech": "React JS, JavaScript, HTML, CSS, Firebase Hosting",
+    "description": "GitHub Actions Pipeline to trigger on git push and deploy on production.",
+    "link": "https://github.com/thanurarukshan/React-Portfolio-V2.0"
   },
   {
     "title": "Property Selling Web App",

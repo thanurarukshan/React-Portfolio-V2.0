@@ -33,7 +33,7 @@
 .Skillset-skill-des-experience {
   max-width: 1200px !important;
   display: flex;
-  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
 }
 
 .Skillset-skill-des-experience div {
