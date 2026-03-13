@@ -104,3 +104,21 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 768px) {
+  .Skillset-skill-des-experience .experience-card .experience-list {
+    display: none;
+  }
+  .Skillset-skill-des-experience .experience-card.expanded .experience-list {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .Skillset-skill-des-experience .experience-card {
+    cursor: pointer;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
