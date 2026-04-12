@@ -9,27 +9,27 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import Experience from "./Experience";
 import Certifications from "./Certifications";
-
-//font
-import '@fontsource/montserrat';
-import '@fontsource/montserrat/500.css';
-import '@fontsource/montserrat/700.css';
-
+import Headerbar from "./Headerbar";
+import MobileNav from "./MobileNav";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <Aboutme />
-    <Experience/>
-    <Skillset />
-    <Projects />
-    <Certifications />
-    <Footer />
+    {/* Fixed full-site Vanta background */}
+    <div id="vanta-bg" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }} />
+    {/* Page content sits on top */}
+    <div style={{ position: 'relative', zIndex: 1 }}>
+      <Headerbar />
+      <App />
+      <Aboutme />
+      <Experience />
+      <Skillset />
+      <Projects />
+      <Certifications />
+      <Footer />
+    </div>
+    <MobileNav />
   </React.StrictMode>,
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

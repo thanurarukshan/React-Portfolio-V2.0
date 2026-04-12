@@ -2,16 +2,16 @@ import "./Experience.css";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import experiences from "./data/experiences.json"; // make sure this file exists in the same folder
+import experiences from "./data/experiences.json";
 
 function Experience() {
   const [expandedCard, setExpandedCard] = useState(null);
 
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: true, duration: 800, easing: "ease-out-quart" });
   }, []);
 
-  const handleCardClick = (idx, link) => {
+  const handleToggle = (idx, link) => {
     if (window.innerWidth <= 768) {
       setExpandedCard(expandedCard === idx ? null : idx);
     } else {
@@ -19,47 +19,41 @@ function Experience() {
     }
   };
 
-  const handleKeyDown = (e, idx, link) => {
-    if (e.key === "Enter") {
-      handleCardClick(idx, link);
-    }
-  };
-
   return (
-    <div className="Skillset">
-      <div className="Skillset-skill">
-        <span className="Skillset-skill-name" data-aos="fade-up">
+    <section className="section-wrapper" id="experience">
+      <div className="section-inner">
+        <h2 className="section-title" data-aos="fade-up">
           Experience
-        </span>
-
-        {/* ONE wrapper with the class your CSS expects */}
-        <div className="Skillset-skill-des-experience">
+        </h2>
+        <div className="timeline">
           {experiences.map((exp, idx) => (
-            /* each child <div> is a "card" and will match `.Skillset-skill-des-experience div` CSS */
             <div
               key={idx}
-              className={`experience-card ${expandedCard === idx ? "expanded" : ""}`}
+              className={`timeline-item${expandedCard === idx ? " expanded" : ""}`}
               data-aos="fade-up"
-              onClick={() => handleCardClick(idx, exp.link)}
+              data-aos-delay={idx * 80}
+              onClick={() => handleToggle(idx, exp.link)}
               role={exp.link ? "link" : "article"}
               tabIndex={0}
-              onKeyDown={(e) => handleKeyDown(e, idx, exp.link)}
+              onKeyDown={(e) => e.key === "Enter" && handleToggle(idx, exp.link)}
             >
-              <span id="title">{exp.title}</span>
-              <span id="title-content" className="sub-title">
-                {exp.company}
-              </span>
-
-              <ul className="experience-list">
-                {exp.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span className="timeline-title">{exp.title}</span>
+                <span className="timeline-company">{exp.company}</span>
+                {exp.details && exp.details.length > 0 && (
+                  <ul className="timeline-list">
+                    {exp.details.map((detail, i) => (
+                      <li key={i}>{detail}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,101 +1,63 @@
-@font-face {
-  font-family: "masque";
-  src: url(../public/MASQUE__.ttf);
-}
+/* =========================================
+   SKILLS SECTION
+   ========================================= */
 
-.Skillset {
-  color: black;
-  background-color: white;
-  min-width: 100vw;
-  min-height: 100vh;
+/* Skills grid */
+.skills-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.Skillset-skill-name {
-  /* font-family: "sans"; */
-  font-size: 80px;
-}
-
-.Skillset-skill {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Skillset-skill-des {
-  min-width: 1200px;
-  max-width: 1200px;
+.skill-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  /* ✅ only spacing between cards */
-  align-items: stretch;
-  /* cards align in height */
+  grid-template-columns: 200px 1fr;
+  gap: 16px 32px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: var(--border-accent);
+  transition: padding-left 0.25s ease;
 }
 
-.Skillset-skill-des div {
-  display: flex;
-  flex-direction: column;
-  background-color: #091d36;
-  background-image: linear-gradient(315deg, #091d36 0%, #37d5d6 90%);
-  color: white;
-  /* margin removed to avoid double spacing */
-  padding: 30px 40px;
-  border-radius: 30px;
-  align-items: center;
-  justify-content: flex-start;
-  transition: 1s;
-
-  /* ✅ equal card height on desktop */
-  min-height: 220px;
-  max-height: 220px;
-  overflow-y: auto;
+.skill-row:first-child {
+  border-top: var(--border-accent);
 }
 
-.Skillset-skill-des div:hover {
-  scale: 105%;
-  transition: 1s;
-  color: aqua;
+.skill-row:hover {
+  padding-left: 8px;
 }
 
-#title {
-  font-weight: 600;
-  font-size: 30px;
+.skill-category {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-#title-content {
-  font-weight: 200;
+.skill-items {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.7;
 }
 
-@media (max-width: 1200px) {
-  .Skillset-skill-name {
-    font-size: 12vw;
-    margin: 20px;
+/* Mobile: stack category above items */
+@media (max-width: 600px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 16px 0;
   }
 
-  .Skillset-skill-des {
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-    min-width: 95vw;
+  .skill-category {
+    font-size: 0.82rem;
   }
 
-  .Skillset-skill-des div {
-    min-height: auto;
-    /* let content decide height */
-    max-height: none;
-    /* remove fixed cap */
-    overflow-y: visible;
-  }
-
-  #title {
-    font-size: 25px;
-  }
-
-  #title-content {
-    font-size: 15px;
+  .skill-items {
+    font-size: 1rem;
   }
 }

@@ -1,49 +1,59 @@
+/* =========================================
+   GLOBAL DESIGN TOKENS & RESETS
+   ========================================= */
+:root {
+  --color-bg: #050a14;
+  --color-accent: #00e5ff;
+  --color-accent-dim: rgba(0, 229, 255, 0.35);
+  --color-text-primary: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.55);
+  --color-text-subtle: rgba(255, 255, 255, 0.28);
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --section-padding: 100px 24px;
+  --border-accent: 1px solid rgba(0, 229, 255, 0.2);
+  --mobile-nav-height: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  max-width: 100vw !important;
-  font-family: 'Montserrat';
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
   scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-body {
-  /* background-image: url(../public/flat-mountains.svg); */
-  /* Plasmatic Waves Background */
-  background-color: black;
-  /* Using RGBA for 40% opacity effect over black background */
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.4), rgba(44, 11, 46, 0.4), rgba(0, 78, 102, 0.4), rgba(0, 31, 63, 0.4));
-  background-size: 400% 400%;
-  /* Increased duration to 30s for slower speed */
-  animation: gradientBG 30s ease infinite;
-
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#root {
   min-height: 100vh;
-  color: white;
+  position: relative;
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-dim);
+  border-radius: 2px;
 }

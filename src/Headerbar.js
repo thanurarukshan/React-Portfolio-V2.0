@@ -1,26 +1,49 @@
 import "./Headerbar.css";
-import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import EmailIcon from "@mui/icons-material/Email";
+import React, { useEffect, useState } from "react";
+
+const navLinks = [
+  { label: "Home", href: "#" },
+  { label: "About", href: "#aboutMe" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Certs", href: "#certifications" },
+];
 
 function Headerbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("Home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="headerbar-main">
-      <div className="headerbar">
-        <div>
-          <a href="#">Home</a>
-          <a href="#aboutMe">About me</a>
+    <header className={`headerbar-main${scrolled ? " scrolled" : ""}`}>
+      <nav className="headerbar">
+        <span className="headerbar-logo">
+          <span className="headerbar-logo-bracket">&lt;</span>
+          TR
+          <span className="headerbar-logo-bracket">/&gt;</span>
+        </span>
+        <div className="headerbar-links">
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className={`headerbar-link${active === link.label ? " active" : ""}`}
+              onClick={() => setActive(link.label)}
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
-        {/*<div className="headerbar-links">
-          <a href="https://www.linkedin.com/in/thanura-rukshan-8b610b169/?originalSubdomain=lk"><LinkedInIcon /></a>
-          <a href="https://www.facebook.com/thanura.rukshan.5"><FacebookIcon /></a>
-          <a href="mailto:thanurarukshan2000@gmail.com"><EmailIcon /></a>
-          <a href="https://wa.me/+94779371866"><WhatsAppIcon /></a>
-        </div>*/}
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 

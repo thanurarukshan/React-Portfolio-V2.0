@@ -1,83 +1,109 @@
-@font-face {
-  font-family: "masque";
-  src: url(../public/MASQUE__.ttf);
-}
-.Skillset {
-  margin-top: -5px;
-  /* padding-top: 50px; */
-  padding-bottom: 100px;
-  color: black;
-  background-color: white;
-  min-width: 100vw;
-  min-height: 100vh;
+/* =========================================
+   PROJECTS SECTION
+   ========================================= */
+.projects-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.Skillset-skill-name {
-  font-family: "sans";
-  font-size: 80px;
-}
-
-.Skillset-skill {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Skillset-skill-des {
-  max-width: 1200px;
+.project-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 52px 1fr auto;
+  gap: 0 20px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: var(--border-accent);
+  cursor: pointer;
+  transition: padding-left 0.25s ease;
+  outline: none;
 }
 
-.Skillset-skill-des div {
+.project-item:first-child {
+  border-top: var(--border-accent);
+}
+
+.project-item:hover {
+  padding-left: 12px;
+}
+
+.project-item:hover .project-title {
+  color: var(--color-accent);
+}
+
+.project-item:hover .project-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Number */
+.project-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--color-text-subtle);
+  padding-top: 4px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+/* Body */
+.project-body {
   display: flex;
   flex-direction: column;
-  background-color: #091d36;
-  background-image: linear-gradient(315deg, #091d36 0%, #37d5d6 90%);
-  color: white;
-  margin: 10px;
-  padding: 30px 40px;
-  border-radius: 30px;
-  align-items: center;
-  justify-content: center;
-  transition: 1s;
+  gap: 5px;
 }
 
-.Skillset-skill-des div:hover {
-  scale: 105%;
-  transition: 1s;
-  color: aqua;
-}
-
-#title {
+.project-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 600;
-  font-size: 30px;
-  text-align: center;
-}
-#title-content {
-  font-weight: 200;
-  text-align: center;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  transition: color 0.25s ease;
 }
 
-@media (max-width: 1200px) {
-  .Skillset-skill-name {
-    font-size: 12vw;
-    margin: 20px;
-  }
-  .Skillset-skill-des {
-    display: flex;
-    flex-direction: column;
-    max-width: 95%;
-  }
-  #title {
-    font-size: 25px;
+.project-tech {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+}
+
+.project-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: 2px;
+}
+
+/* Arrow */
+.project-arrow {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  padding-top: 3px;
+  align-self: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .project-item {
+    grid-template-columns: 36px 1fr auto;
+    gap: 0 12px;
+    padding: 20px 0;
   }
 
-  #title-content {
-    font-size: 15px;
+  .project-arrow {
+    opacity: 0.4;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
   }
 }

@@ -1,41 +1,92 @@
-@font-face {
-  font-family: "sans";
-  src: url(../public/OpenSans-VariableFont_wdth,wght.ttf);
+/* =========================================
+   HEADER / TOP NAV (desktop)
+   ========================================= */
+.headerbar-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
 }
 
-body {
-  font-family: sans;
-  scroll-behavior: smooth;
+.headerbar-main.scrolled {
+  background: rgba(5, 10, 20, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(0, 229, 255, 0.12);
 }
 
 .headerbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 32px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2% 2%;
-  background-color: white;
-  color: black;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.headerbar a {
+/* Logo */
+.headerbar-logo {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.headerbar-logo-bracket {
+  color: var(--color-accent);
+}
+
+/* Nav links */
+.headerbar-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headerbar-link {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
   text-decoration: none;
-  color: inherit;
-  padding: 10px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  transition: color 0.25s ease, background 0.25s ease;
+  position: relative;
 }
 
-.headerbar a:hover {
-  color: #bf40bf;
-  transition: 0.5s;
+.headerbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: 1px;
+  transition: width 0.25s ease;
 }
 
-.headerbar-main {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
+.headerbar-link:hover,
+.headerbar-link.active {
+  color: var(--color-text-primary);
 }
 
+.headerbar-link:hover::after,
+.headerbar-link.active::after {
+  width: 60%;
+}
+
+/* ─── Hide on mobile — mobile-nav takes over ─── */
 @media (max-width: 768px) {
-  .headerbar {
-    padding: 6% 4%;
+  .headerbar-main {
+    display: none;
   }
 }

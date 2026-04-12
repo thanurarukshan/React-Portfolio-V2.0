@@ -1,144 +1,139 @@
-@keyframes grow {
-  0% {
-    scale: 100%;
-  }
-
-  50% {
-    scale: 101%;
-  }
-
-  100% {
-    scale: 100%;
-  }
+/* =========================================
+   ABOUT ME SECTION
+   ========================================= */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(0, 229, 255, 0.25), 0 0 60px rgba(0, 229, 255, 0.08); }
+  50%       { box-shadow: 0 0 50px rgba(0, 229, 255, 0.4),  0 0 90px rgba(0, 229, 255, 0.15); }
 }
 
-
-
 .Aboutme {
-  color: white;
-  min-width: 100vw;
   min-height: 100vh;
-
-  /* Plasmatic Waves Background moved to global index.css */
-
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--section-padding);
+  padding-top: 80px;
+}
+
+.Aboutme-inner {
+  display: flex;
   flex-direction: column;
-}
-
-.Aboutme-aboutme {
-  font-size: 80px;
-  font-weight: 600;
-}
-
-.Aboutme-dis {
-  max-width: 600px;
+  align-items: center;
   text-align: center;
-  font-size: 20px;
-  margin-top: 10px;
-  font-weight: 70;
+  max-width: 680px;
 }
 
-.Aboutme-dis-word {
-  color: aqua;
+/* ─── Photo ─── */
+.Aboutme-photo-wrap {
+  position: relative;
 }
-
-/* .Aboutme-me {
-  width: 300px;
-  animation: grow 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 15px aqua);
-} */
 
 .Aboutme-me {
-  width: 450px;
-  height: 450px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  filter: drop-shadow(0 10px 20px aqua);
-  animation: grow 2s ease-in-out infinite;
+  object-position: center top;
+  border: 2px solid var(--color-accent-dim);
+  animation: glowPulse 4s ease-in-out infinite;
+  transition: transform 0.4s ease;
+  display: block;
 }
 
 .Aboutme-me:hover {
-  animation-play-state: paused;
+  transform: scale(1.04);
 }
 
-.Aboutme-edu-edu {
-  font-size: 40px;
+/* ─── Name ─── */
+.Aboutme-name {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-top: 28px;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
-.Aboutme-cv {
-  color: black;
-  text-decoration: none;
-  padding: 20px;
-  background-color: white;
-  margin-top: 50px;
-  border-radius: 200px;
-  transition: 1s;
+/* ─── Subtitle ─── */
+.Aboutme-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: var(--color-text-muted);
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+
+.Aboutme-subtitle em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* ─── Divider (hidden) ─── */
+.Aboutme-divider {
+  display: none;
+}
+
+/* ─── Description ─── */
+.Aboutme-dis {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  max-width: 580px;
+}
+
+.Aboutme-accent {
+  color: var(--color-text-primary);
   font-weight: 600;
-  user-select: none;
+}
+
+/* ─── CV Button ─── */
+.Aboutme-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 36px;
+  padding: 13px 30px;
+  border: 1px solid var(--color-accent-dim);
+  border-radius: 40px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out,
+              border-color 0.5s ease-in-out,
+              box-shadow 0.5s ease-in-out,
+              color 0.5s ease-in-out,
+              transform 0.3s ease-in-out;
 }
 
 .Aboutme-cv:hover {
-  background-color: aqua;
-  transition: 1s !important;
+  background: rgba(0, 229, 255, 0.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 28px rgba(0, 229, 255, 0.25);
+  color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
-@media (max-width: 1200px) {
-  .Aboutme-dis {
-    margin-top: 10px;
-    max-width: 70%;
-    line-height: 1.4;
-    font-weight: 100;
-    text-align: center;
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .Aboutme {
+    padding: 80px 24px calc(var(--mobile-nav-height) + 40px);
   }
 
-  .Aboutme-aboutme {
-    font-size: 12vw;
-  }
-
-  .Aboutme-dis {
-    font-size: 16px;
-  }
-
-  .Aboutme-me {
-    width: 250px;
-    height: 250px;
-    /* Ensure aspect ratio is maintained */
-  }
-
-  .Aboutme-cv {
-    color: black;
-    text-decoration: none;
-    padding: 20px;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 200px;
-    transition: 1s;
-    font-weight: 600;
-    user-select: none;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-height: 600px) {
   .Aboutme-me {
     width: 150px;
     height: 150px;
   }
 
-  .Aboutme-aboutme {
-    font-size: 50px;
-  }
-
-  .Aboutme-dis {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-
-  .Aboutme-cv {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+  .Aboutme-name {
+    font-size: clamp(2rem, 9vw, 2.8rem);
   }
 }

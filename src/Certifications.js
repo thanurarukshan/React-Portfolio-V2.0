@@ -6,26 +6,30 @@ import certifications from "./data/certifications.json";
 
 function Certifications() {
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: true, duration: 800, easing: "ease-out-quart" });
   }, []);
 
   return (
-    <div className="Skillset">
-      <div className="Skillset-skill">
-        <span className="Skillset-skill-name" data-aos="fade-up">
+    <section className="section-wrapper" id="certifications">
+      <div className="section-inner">
+        <h2 className="section-title" data-aos="fade-up">
           Certifications
-        </span>
-
-        <div className="Skillset-skill-des">
+        </h2>
+        <div className="cert-list">
           {certifications.map((cert, idx) => (
-            <div key={idx} data-aos="fade-up">
-              <span id="title">{cert.title}</span>
-              <span id="title-content">{cert.issuer}</span>
+            <div
+              key={idx}
+              className="cert-item"
+              data-aos="fade-up"
+              data-aos-delay={idx * 50}
+            >
+              <span className="cert-title">{cert.title}</span>
+              <span className="cert-issuer">{cert.issuer}</span>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

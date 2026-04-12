@@ -18,6 +18,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
+    "three": "^0.183.2",
+    "vanta": "^0.5.24",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
