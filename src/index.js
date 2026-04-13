@@ -11,14 +11,16 @@ import Experience from "./Experience";
 import Certifications from "./Certifications";
 import Headerbar from "./Headerbar";
 import MobileNav from "./MobileNav";
+import WaveBackground from "./WaveBackground";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* Fixed full-site Vanta background */}
-    <div id="vanta-bg" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }} />
-    {/* Page content sits on top */}
-    <div style={{ position: 'relative', zIndex: 1 }}>
+    {/* Canvas water-wave background — fixed, covers the full site */}
+    <WaveBackground />
+
+    {/* Page content sits on top (z-index 1) */}
+    <div style={{ position: "relative", zIndex: 1 }}>
       <Headerbar />
       <App />
       <Aboutme />
@@ -28,6 +30,8 @@ root.render(
       <Certifications />
       <Footer />
     </div>
+
+    {/* Mobile bottom nav sits above content */}
     <MobileNav />
   </React.StrictMode>,
 );
