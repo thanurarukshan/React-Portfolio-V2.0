@@ -3,7 +3,12 @@ name: Deploy to Firebase
 on:
   push:
     branches:
-      - master  # Change this if your default branch is different
+      - master
+
+# Required for Workload Identity Federation (keyless auth)
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
   deploy:
@@ -16,16 +21,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Use the Node.js version required by your project
+          node-version: 18
+          cache: 'npm' # Caches node_modules based on package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # Faster & stricter than npm install — respects package-lock.json
 
-      - name: Build project
-        run: DISABLE_ESLINT_PLUGIN=true npm run build
+      - name: Lint & Build
+        run: npm run build # ESLint runs automatically via react-scripts (no longer bypassed)
 
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools  # Install Firebase CLI
+      - name: Authenticate to Google Cloud (Workload Identity Federation)
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
+          service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
 
-      - name: Deploy to Firebase
-        run: firebase deploy --token "${{ secrets.FIREBASE_TOKEN }}"
+      - name: Deploy to Firebase Hosting
+        run: npx firebase-tools@13 deploy --only hosting # Pinned CLI version, no global install
