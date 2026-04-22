@@ -10,7 +10,8 @@ export const portfolioData = {
         "AWS Trained",
         "Freelancer Engineer",
         "System Engineer",
-        "SRE"
+        "SRE",
+        "Software Engineer"
     ],
     socialLinks: [
         {
