@@ -31,10 +31,14 @@ jobs:
         run: npm run build # ESLint runs automatically via react-scripts (no longer bypassed)
 
       - name: Authenticate to Google Cloud (Workload Identity Federation)
+        id: auth
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
+          token_format: 'access_token' # Mint a short-lived OAuth2 token for firebase-tools
 
       - name: Deploy to Firebase Hosting
+        env:
+          FIREBASE_TOKEN: ${{ steps.auth.outputs.access_token }} # Short-lived token from WIF, not a stored secret
         run: npx firebase-tools@13 deploy --only hosting # Pinned CLI version, no global install
