@@ -4,11 +4,13 @@ export const portfolioData = {
     name: "Thanura Rukshan",
     nameParts: ["THANURA", "RUKSHAN"], // Split for the layout effect
     roles: [
-        "DevOps Enthusiast",
-        "Engineering Undergraduate",
+        "DevOps Engineer",
+        "Engineering Bachelor",
         "Cloud Enthusiast",
         "AWS Trained",
-        "Freelancer"
+        "Freelancer Engineer",
+        "System Engineer",
+        "SRE"
     ],
     socialLinks: [
         {
