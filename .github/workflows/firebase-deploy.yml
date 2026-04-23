@@ -13,6 +13,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Opt into Node.js 24 actions runtime (required after June 2026)
 
     steps:
       - name: Checkout repository
@@ -41,4 +43,4 @@ jobs:
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_TOKEN: ${{ steps.auth.outputs.access_token }} # Short-lived token from WIF, not a stored secret
-        run: npx firebase-tools@13 deploy --only hosting # Pinned CLI version, no global install
+        run: npx firebase-tools@15 deploy --only hosting # Pinned to latest stable major, no global install
