@@ -26,6 +26,9 @@ jobs:
           node-version: 20
           cache: 'npm' # Caches node_modules based on package-lock.json
 
+      - name: Upgrade npm to match local version
+        run: npm install -g npm@11 # CI runner ships with npm 10; upgrade to match local npm 11
+
       - name: Install dependencies
         run: npm ci # Faster & stricter than npm install — respects package-lock.json
 
