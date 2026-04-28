@@ -3,7 +3,8 @@
     "title": "Linux RHEL Server Setup",
     "tech": "Ansible, Linux, Network Configuration, System Tuning, Server Partitioning",
     "description": "An automated approach to configuring, managing, and monitoring network and system settings on multiple Linux servers.",
-    "link": "https://github.com/thanurarukshan/Linux_RHEL_Server_Setup"
+    "link": "https://github.com/thanurarukshan/Linux_RHEL_Server_Setup",
+    "docsLink": "https://thanurarukshan.github.io/Linux_RHEL_Server_Setup/"
   },
   {
     "title": "Diff-Pro (A tool to Advanced File Comparison)",

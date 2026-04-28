@@ -1,6 +1,6 @@
 [
   {
-    "title": "Trainee DevOps Engineer | 2024 July \u2013 2025 January",
+    "title": "DevOps Engineer (Trainee) | 2024 \u2013 2025",
     "company": "hSenid Mobile Solutions",
     "link": "https://www.linkedin.com/company/hsenid-mobile-solutions/posts/?feedView=all",
     "details": [
@@ -15,10 +15,15 @@
     ]
   },
   {
-    "title": "Freelance Developer and Designer | 2019 - Present",
-    "company": "Outsourced Projects, Fiverr and Upwork",
+    "title": "Freelance Engineer | 2022 - Present",
+    "company": "Outsourced Projects (Fiverr, Upwork and Direct Clients)",
     "link": "",
-    "details": []
+    "details": [
+      "Containerized and orchestrated React/Node.js microservices using Docker, Docker Compose, and K3s.",
+      "Engineered ML pipelines, deploying predictive models as scalable RESTful APIs for backend processing.",
+      "Delivered end-to-end full-stack applications (React, MySQL) utilizing both 3-tier and monolithic architectures.",
+      "Navigated tight deadlines and rapidly changing requirements, ensuring on-time delivery and high client satisfaction."
+    ]
   },
   {
     "title": "SLTC SOC 2.0 | 2023 - 2023",

@@ -42,6 +42,17 @@ function Projects() {
                 {project.description && (
                   <span className="project-desc">{project.description}</span>
                 )}
+                {project.docsLink && (
+                  <a
+                    className="project-docs-link"
+                    href={project.docsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    📄 Docs
+                  </a>
+                )}
               </div>
               {project.link && (
                 <span className="project-arrow" aria-hidden="true">→</span>

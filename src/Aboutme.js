@@ -3,7 +3,7 @@ import "./Aboutme.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import New from "./assets/2026New2.pdf";
+import New from "./assets/2026New3.pdf";
 
 function Aboutme() {
   const handleDownloadCV = () => {

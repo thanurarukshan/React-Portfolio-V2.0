@@ -20,7 +20,8 @@
       "Tekton",
       "Prometheus",
       "Alert Manager",
-      "Grafana"
+      "Grafana",
+      "Node Exporter"
     ]
   },
   {

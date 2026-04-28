@@ -80,6 +80,29 @@
   margin-top: 2px;
 }
 
+/* Docs link badge */
+.project-docs-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 2px 8px;
+  width: fit-content;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.project-docs-link:hover {
+  opacity: 1;
+  background: rgba(var(--color-accent-rgb, 99, 179, 237), 0.1);
+}
+
 /* Arrow */
 .project-arrow {
   font-size: 1.1rem;
