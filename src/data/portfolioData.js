@@ -16,7 +16,7 @@ export const portfolioData = {
     socialLinks: [
         {
             name: "LinkedIn",
-            url: "https://www.linkedin.com/in/thanura-rukshan-8b610b169/?originalSubdomain=lk",
+            url: "https://www.linkedin.com/in/thanurarukshan/",
             icon: "LinkedIn"
         },
         {
