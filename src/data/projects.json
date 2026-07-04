@@ -49,6 +49,24 @@
     "link": "https://github.com/thanurarukshan/Rest-API-Node-Back-End"
   },
   {
+    "title": "AWS ECS CI/CD Pipeline & Infrastructure",
+    "tech": "Github Actions, Docker, AWS (ECS, ECR, Fargate), Terraform",
+    "description": "Automated container build, test, and deployment workflows. Provisioned infrastructure as code using Terraform and orchestrated seamless deployments to AWS ECS using serverless Fargate launch type.",
+    "link": "https://github.com/thanurarukshan/AWS-ECS-CICD-Pipeline"
+  },
+  {
+    "title": "AWS Multi-EC2 Observability Stack",
+    "tech": "AWS CloudWatch, EC2, VPC, SSM Parameter Store, Terraform",
+    "description": "Configured a proactive monitoring and alerting stack across a multi-EC2 VPC environment, utilizing CloudWatch and SSM Parameter Store for centralized metrics and system health alarms.",
+    "link": "https://github.com/thanurarukshan/AWS-Multi-EC2-Observability-Stack"
+  },
+  {
+    "title": "Serverless Kubernetes Architecture (OpenClaw)",
+    "tech": "Kubernetes (K3s), Knative, AWS (EKS, Fargate, EFS), PVs",
+    "description": "Engineered a cost-optimized Kubernetes deployment with persistent states. Implemented Knative with Kourier Gateway to enable scale-to-zero for API requests.",
+    "link": "https://github.com/thanurarukshan/Serverless-Kubernetes-Architecture"
+  },
+  {
     "title": "For More...",
     "tech": "GitHub",
     "description": "Explore more projects and contributions on my GitHub profile.",

@@ -1,7 +1,13 @@
 [
   {
     "title": "Languages",
-    "items": ["Python", "JavaScript (JS)", "Java", "TypeScript (TS)", "R"]
+    "items": [
+      "Python",
+      "JavaScript (JS)",
+      "Java",
+      "TypeScript (TS)",
+      "R"
+    ]
   },
   {
     "title": "Cloud/DevOps",
@@ -21,12 +27,29 @@
       "Prometheus",
       "Alert Manager",
       "Grafana",
-      "Node Exporter"
+      "Node Exporter",
+      "Jenkins",
+      "Amazon CloudWatch",
+      "EKS",
+      "ECS",
+      "ECR",
+      "Fargate",
+      "EC2",
+      "S3",
+      "EFS",
+      "IAM",
+      "SSM Parameter Store",
+      "Knative",
+      "Helm Charts"
     ]
   },
   {
     "title": "Databases",
-    "items": ["MySQL", "MongoDB", "Redis"]
+    "items": [
+      "MySQL",
+      "MongoDB",
+      "Redis"
+    ]
   },
   {
     "title": "Software Engineering",
@@ -58,20 +81,33 @@
       "VPC",
       "Security Groups",
       "Load Balancing",
-      "SSH"
+      "SSH",
+      "System Hardening (CIS Benchmarks)",
+      "Linux (RHEL/CentOS)"
     ]
   },
   {
     "title": "Web - Frontend",
-    "items": ["HTML", "CSS", "React JS", "Next JS", "UI/UX (Figma)"]
+    "items": [
+      "HTML",
+      "CSS",
+      "React JS",
+      "Next JS",
+      "UI/UX (Figma)"
+    ]
   },
   {
     "title": "Mobile App",
-    "items": ["React Native"]
+    "items": [
+      "React Native"
+    ]
   },
   {
     "title": "Backend",
-    "items": ["Node JS", "Express JS"]
+    "items": [
+      "Node JS",
+      "Express JS"
+    ]
   },
   {
     "title": "Graphic Design",
