@@ -1,0 +1,8 @@
+node_modules/
+.terraform/
+terraform.tfstate
+dist/
+build/
+.next/
+*.log
+__pycache__/
